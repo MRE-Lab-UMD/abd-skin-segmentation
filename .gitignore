@@ -5,6 +5,7 @@
 .DS_Store
 
 # Build artifacts
+Input
 Pratheepan_Dataset
 Ground_Truth
 __MACOSX
