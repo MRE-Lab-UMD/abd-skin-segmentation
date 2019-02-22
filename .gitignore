@@ -11,6 +11,9 @@ Ground_Truth
 __MACOSX
 Face_Dataset.zip
 .ipynb_checkpoints
-
+*.docx
+*.odt
+*.pptx
+*.pdf
 # Python
 *.pyc
