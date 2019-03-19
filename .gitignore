@@ -15,6 +15,7 @@ Face_Dataset.zip
 abdomen images/
 coco-overall.zip
 coco-overall
+camera
 .ipynb_checkpoints
 *.docx
 *.odt
