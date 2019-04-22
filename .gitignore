@@ -23,4 +23,5 @@ camera
 *.pdf
 # Python
 *.pyc
-
+*.npy
+*.h5
