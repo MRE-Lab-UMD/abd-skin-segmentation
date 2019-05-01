@@ -20,3 +20,9 @@ To test your own images, you can download the trained model using the following 
 pip install gdown
 gdown  https://drive.google.com/uc?id=1j49R6MPfba-LRV40kYgBcuEsLNUipm0S
 ```
+
+## Live Skin Segmentation
+To run the model on images acquired by your web cam, download and set the model path and then run:
+```
+python3 skin_live.py
+```

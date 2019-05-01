@@ -10,7 +10,6 @@ import time
 import random
 import warnings
 
-import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 from tqdm import tqdm_notebook as tqdm
