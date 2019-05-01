@@ -6,7 +6,9 @@ All the dataset will be soon made publicly available.
 
 
 ## Demo
-![Real Time Skin Segmentation](/assets/skinseg-MaskRcnn.gif)
+<p align="center">
+<img src="https://github.com/anirudhtopiwala/Umbilicus_Skin_Detection/blob/master/Mask_RCNN/assets/skinseg-MaskRcnn.gif">
+</p>
 
 
 ## Run Jupyter notebooks
