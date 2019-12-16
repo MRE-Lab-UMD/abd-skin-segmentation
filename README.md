@@ -1,5 +1,5 @@
 # Umbilicus_Skin_Detection
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ---
 1) Add License file ( Change the abve tag depending upon the license we select)
 2) Info about paper, add a gif
