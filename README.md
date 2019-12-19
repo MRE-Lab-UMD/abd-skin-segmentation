@@ -1,21 +1,21 @@
 # Deep Learning Techniques for Skin Segmentation on Novel Abdominal Dataset
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ---
-1) Add License file ( Change the abve tag depending upon the license we select)
+<!--1) Add License file ( Change the abve tag depending upon the license we select)
 2) Info about paper, add a gif
 3) Citation links 
 4) Info about the dataset 
 5) How to download dataset
-6) Hot to run models.
+6) Hot to run models.-->
 
 ## Introduction
-Need and application (cite the two papers published by the guys).
+This repository provides codes for the skin segmentation methods investigated in `[1]`, mainly Mask-RCNN, U-Net, a Fully Connected Network and a MATLAB script for thresholding. The algorithms were primarily developed to perform abdominal skin segmentation for trauma patients using RGB images, as part of an ongoing research work for developing an autonomous robot for trauma assessment [2](https://epubs.siam.org/doi/abs/10.1137/1.9781611975758.2)`[3]`.  
 
 ## Information on Abdominal Skin Dataset
 Summary on the paper's abdominal section (gender, skin color).
 
 ## Downloading Abdominal Skin Dataset
-The complete skin datasets containing the original images along with their masks (which include HGR, TDSD, Schmugge, Pratheepan, VDM, SFA, FSD and our abdominal dataset) can be download on the following [link](https://drive.google.com/open?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE). These datasets have been sorted to follow the same format, and can be readily run in the codes. If youre' only interested in the abdominal dataset, you can download it from [here](https://drive.google.com/open?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm). You can also download and unzip the datasets from the terminal.
+The complete skin datasets containing the original images along with their masks (which include HGR, TDSD, Schmugge, Pratheepan, VDM, SFA, FSD and our abdominal dataset) can be download from the following [link](https://drive.google.com/open?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE). These datasets have been sorted to follow the same format, and can be readily run in the codes. If you're only interested in the abdominal dataset, you can download it from [here](https://drive.google.com/open?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm). You can also download and unzip the datasets from the terminal:
 ```
 $ pip install gdown
 $ gdown "https://drive.google.com/uc?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE"
@@ -46,14 +46,14 @@ If you have used the abdominal dataset, or any of our trained models, kindly cit
 ```
 @inproceedings{topiwala2019bibe,
     author = {A. Topiwala and L. Al-Zogbi and T. Fleiter and A. Krieger},
-         title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
-booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
+    title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
+  booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
      pages = {1--8},
-        year = {2019}
+      year = {2019}
 }
 ``` 
 
-## To Download the Datasets Used
+<!-- ## To Download the Datasets Used
 ```
 pip install gdown
 gdown  https://drive.google.com/uc?id=1CS_tl8cXOmy3Zv9TrqD2gApUTftKCu4m
@@ -63,4 +63,4 @@ To Unzip
 tar -xzvf  Skin_Datasets.tar.gz 
 ```
 
-<!-- Feel Better :* -->
+ Feel Better :* -->
