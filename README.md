@@ -9,7 +9,7 @@
 6) Hot to run models.-->
 
 ## Introduction
-This repository provides codes for the skin segmentation methods investigated in `[1]`, mainly Mask-RCNN, U-Net, a Fully Connected Network and a MATLAB script for thresholding. The algorithms were primarily developed to perform abdominal skin segmentation for trauma patients using RGB images, as part of an ongoing research work for developing an autonomous robot for trauma assessment [2](https://epubs.siam.org/doi/abs/10.1137/1.9781611975758.2)`[3]`.  
+This repository provides codes for the skin segmentation methods investigated in \[1\], mainly Mask-RCNN, U-Net, a Fully Connected Network and a MATLAB script for thresholding. The algorithms were primarily developed to perform abdominal skin segmentation for trauma patients using RGB images, as part of an ongoing research work for developing an autonomous robot for trauma assessment \[[2](https://epubs.siam.org/doi/abs/10.1137/1.9781611975758.2)\]\[3\].  
 
 ## Information on Abdominal Skin Dataset
 Summary on the paper's abdominal section (gender, skin color).
