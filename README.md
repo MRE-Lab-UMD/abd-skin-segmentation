@@ -25,7 +25,9 @@ Jupyter notebook, python 2(?), tenser flow, keras, opencv.
 ### U-Net
 Summarize the comments in the code.
 ### Fully Connected Network
+Again summarize the code.
 ### Thresholding
+Clean up the MATLAB codes.
 
 ## Running the Models
 
