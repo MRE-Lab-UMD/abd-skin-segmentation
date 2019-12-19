@@ -11,6 +11,7 @@
 ## Introduction
 
 ## Information on Abdominal Skin Dataset
+Summary on the paper's abdominal section (gender, skin color).
 
 ## Downloading Abdominal Skin Dataset
 (Give link containing all datasets together, and one with abdominal dataset only).
