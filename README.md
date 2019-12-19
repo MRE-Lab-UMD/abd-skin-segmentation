@@ -16,6 +16,7 @@
 (Give link containing all datasets together, and one with abdominal dataset only).
 
 ## Dependencies
+Jupyter notebook, python 2(?), tenser flow, keras, opencv.
 
 ## Running the Codes
 ### Mask-RCNN
