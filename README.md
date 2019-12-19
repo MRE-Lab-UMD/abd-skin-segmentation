@@ -9,6 +9,7 @@
 6) Hot to run models.
 
 ## Introduction
+Need and application (cite the two papers published by the guys).
 
 ## Information on Abdominal Skin Dataset
 Summary on the paper's abdominal section (gender, skin color).
