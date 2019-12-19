@@ -15,7 +15,17 @@ Need and application (cite the two papers published by the guys).
 Summary on the paper's abdominal section (gender, skin color).
 
 ## Downloading Abdominal Skin Dataset
-(Give link containing all datasets together, and one with abdominal dataset only).
+The complete skin datasets containing the original images along with their masks (which include HGR, TDSD, Schmugge, Pratheepan, VDM, SFA, FSD and our abdominal dataset) can be download on the following [link](https://drive.google.com/open?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE). These datasets have been sorted to follow the same format, and can be readily run in the codes. If youre' only interested in the abdominal dataset, you can download it from [here](https://drive.google.com/open?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm). You can also download and unzip the datasets from the terminal.
+```
+$ pip install gdown
+$ gdown "https://drive.google.com/uc?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE"
+$ tar -xzvf  All_Skin_Datasets.tar.gz 
+```
+If you want to download the abdominal dataset separately:
+```
+$ gdown "https://drive.google.com/uc?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm"
+$ tar -xzvf  Abdomen_Only_Dataset.tar.gz 
+```
 
 ## Dependencies
 Jupyter notebook, python 2(?), tenser flow, keras, opencv.
@@ -32,14 +42,14 @@ Clean up the MATLAB codes.
 ## Running the Models
 
 ## Citation
-If you have used the abdominal dataset, or any of our trained models, kindly cite the paper associated with it:
+If you have used the abdominal dataset, or any of our trained models, kindly cite the associated paper:
 ```
 @inproceedings{topiwala2019bibe,
     author = {A. Topiwala and L. Al-Zogbi and T. Fleiter and A. Krieger},
-     title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
- booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
+         title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
+booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
      pages = {1--8},
-      year = {2019}
+        year = {2019}
 }
 ``` 
 
