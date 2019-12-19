@@ -23,6 +23,7 @@ Jupyter notebook, python 2(?), tenser flow, keras, opencv.
 ## Running the Codes
 ### Mask-RCNN
 ### U-Net
+Summarize the comments in the code.
 ### Fully Connected Network
 ### Thresholding
 
