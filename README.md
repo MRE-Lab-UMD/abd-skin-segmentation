@@ -13,29 +13,31 @@ This repository provides codes for the skin segmentation methods investigated in
 
 ---
 
-<p align="center">
 #### Robotic abdominal ultrasound system with the camera view of the abdominal region, and the corresponding segmented skin mask.
+<p align="center">
   <img width="600" src="https://i.ibb.co/0GBK7BJ/1.png">
 </p>
 
 ---
 
-<p align="center">
-#### Sample pictures of the abdominal dataset depicting different skin color intensities and body complexions.
-  <img src="https://i.ibb.co/HK8VDdt/2.png" width="600">
-</p>
-
----
-
-<p align="center">
 #### Improved segmentation results with the use of our proposed Abdominal dataset using U-Net. From left to right in columns: original image, ground truth, segmentation with the Abdominal dataset, and segmentation without the Abdominal dataset.
+<p align="center">
   <img src="https://i.ibb.co/6X51NsF/3.png" width="400">
 </p>
 
 ---
 
 ## Information on Abdominal Skin Dataset
-Summary on the paper's abdominal section (gender, skin color).
+The dataset consists of 1,400 abdomen images retrieved online from Google images search, which were subsequently manually segmented. The images were selected to preserve the diversity of different ethnic groups, preventing indirect racial biases in segmentation algorithms; 700 images represent darker skinned people, which include African, Indian and Hispanic groups, and 700 images represent lighter skinned people, such as Caucasian and Asian groups. A total of 400 images were selected to represent people with higher body mass indices, split equally between light and dark categories. Variations between individuals, such as hair and tattoo coverage, in addition to externals variations like shadows, were also accounted for in the dataset preparation. The size of the images is 227x227 pixels. The skin pixels form 66% of the entire pixel data, with a mean of 54.42% per individual image, and a corresponding standard deviation of 15%. 
+
+---
+
+#### Sample pictures of the abdominal dataset depicting different skin color intensities and body complexions.
+<p align="center">
+  <img src="https://i.ibb.co/HK8VDdt/2.png" width="600">
+</p>
+
+---
 
 ## Downloading Abdominal Skin Dataset
 The complete skin datasets containing the original images along with their masks (which include HGR, TDSD, Schmugge, Pratheepan, VDM, SFA, FSD and our abdominal dataset) can be download from the following [link](https://drive.google.com/open?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE). These datasets have been sorted to follow the same format, and can be readily run in the codes. If you're only interested in the abdominal dataset, you can download it from [here](https://drive.google.com/open?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm). You can also download and unzip the datasets from the terminal:
@@ -69,8 +71,8 @@ If you have used the abdominal dataset, or any of our trained models, kindly cit
 ```
 @inproceedings{topiwala2019bibe,
     author = {A. Topiwala and L. Al-Zogbi and T. Fleiter and A. Krieger},
-    title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
-  booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
+     title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
+booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
      pages = {1--8},
       year = {2019}
 }
