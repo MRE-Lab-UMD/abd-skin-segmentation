@@ -56,13 +56,13 @@ The folders are organized as follows:
 /All_Skin_Datasets/
              ├── Dataset1_HGR/
              │   ├── original_images/
-             │   │     ├ <name>.jpg
+             │   │     ├ <uniqueName>.jpg
              │   │     .
-             │   │     └ <name>.jpg
+             │   │     └ <uniqueName>.jpg
              |   ├── skin_masks/
-             |   |     ├ <name>.png
-             |   |     .
-             |   |     ├ <name>.png
+             |         ├ <uniqueName>.png
+             |         .
+             |         ├ <uniqueName>.png
              ├── Dataset2_TDSD/
              ├── Dataset3_Schmugge/
              .
