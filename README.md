@@ -51,6 +51,29 @@ If you want to download the abdominal dataset separately:
 $ gdown "https://drive.google.com/uc?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm"
 $ tar -xzvf  Abdomen_Only_Dataset.tar.gz 
 ```
+The folders are organized as follows:
+```
+/All_Skin_Datasets/
+                  ├── Dataset1_HGR/
+                  │   ├── labels/
+                  │   │     ├ 000000.label
+                  │   │     └ 000001.label
+                  |   ├── voxels/
+                  |   |     ├ 000000.bin
+                  |   |     ├ 000000.label
+                  |   |     ├ 000000.occluded
+                  |   |     ├ 000000.invalid
+                  |   |     ├ 000001.bin
+                  |   |     ├ 000001.label
+                  |   |     ├ 000001.occluded
+                  |   |     ├ 000001.invalid
+                  ├── Dataset2_TDSD/
+                  ├── Dataset3_Schmugge/
+                  .
+                  .
+                  .
+                  └── Dataset8_Abdomen//
+```
 
 ## Dependencies
 Jupyter notebook, python 2(?), tenser flow, keras, opencv.
