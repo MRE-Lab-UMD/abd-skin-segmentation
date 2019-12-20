@@ -20,13 +20,6 @@ This repository provides codes for the skin segmentation methods investigated in
 
 ---
 
-#### Improved segmentation results with the use of our proposed Abdominal dataset using U-Net. From left to right in columns: original image, ground truth, segmentation with the Abdominal dataset, and segmentation without the Abdominal dataset.
-<p align="center">
-  <img src="https://i.ibb.co/6X51NsF/3.png" width="400">
-</p>
-
----
-
 ## Information on Abdominal Skin Dataset
 The dataset consists of 1,400 abdomen images retrieved online from Google images search, which were subsequently manually segmented. The images were selected to preserve the diversity of different ethnic groups, preventing indirect racial biases in segmentation algorithms; 700 images represent darker skinned people, which include African, Indian and Hispanic groups, and 700 images represent lighter skinned people, such as Caucasian and Asian groups. A total of 400 images were selected to represent people with higher body mass indices, split equally between light and dark categories. Variations between individuals, such as hair and tattoo coverage, in addition to externals variations like shadows, were also accounted for in the dataset preparation. The size of the images is 227x227 pixels. The skin pixels form 66% of the entire pixel data, with a mean of 54.42% per individual image, and a corresponding standard deviation of 15%. 
 
@@ -35,6 +28,13 @@ The dataset consists of 1,400 abdomen images retrieved online from Google images
 #### Sample pictures of the abdominal dataset depicting different skin color intensities and body complexions.
 <p align="center">
   <img src="https://i.ibb.co/HK8VDdt/2.png" width="600">
+</p>
+
+---
+
+#### Improved segmentation results with the use of our proposed Abdominal dataset using U-Net. From left to right in columns: original image, ground truth, segmentation with the Abdominal dataset, and segmentation without the Abdominal dataset.
+<p align="center">
+  <img src="https://i.ibb.co/6X51NsF/3.png" width="400">
 </p>
 
 ---
