@@ -13,22 +13,22 @@ This repository provides codes for the skin segmentation methods investigated in
 
 ---
 
-#### Robotic abdominal ultrasound system with the camera view of the abdominal region, and the corresponding segmented skin mask.
 <p align="center">
+#### Robotic abdominal ultrasound system with the camera view of the abdominal region, and the corresponding segmented skin mask.
   <img width="600" src="https://i.ibb.co/0GBK7BJ/1.png">
 </p>
 
 ---
 
-#### Sample pictures of the abdominal dataset depicting different skin color intensities and body complexions.
 <p align="center">
+#### Sample pictures of the abdominal dataset depicting different skin color intensities and body complexions.
   <img src="https://i.ibb.co/HK8VDdt/2.png" width="600">
 </p>
 
 ---
 
-#### Improved segmentation results with the use of our proposed Abdominal dataset using U-Net. From left to right in columns: original image, ground truth, segmentation with the Abdominal dataset, and segmentation without the Abdominal dataset.
 <p align="center">
+#### Improved segmentation results with the use of our proposed Abdominal dataset using U-Net. From left to right in columns: original image, ground truth, segmentation with the Abdominal dataset, and segmentation without the Abdominal dataset.
   <img src="https://i.ibb.co/6X51NsF/3.png" width="400">
 </p>
 
