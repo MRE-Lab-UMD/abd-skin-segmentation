@@ -57,17 +57,17 @@ The folders are organized as follows:
              ├── Dataset1_HGR/
              │   ├── original_images/
              │   │     ├ <name>.jpg
-             │   │ .
+             │   │     .
              │   │     └ <name>.jpg
-            |   ├── skin_masks/
-            |   |     ├ <name>.png
-            |   | .
-            |   |     ├ <name>.png
+             |   ├── skin_masks/
+             |   |     ├ <name>.png
+             |   |     .
+             |   |     ├ <name>.png
              ├── Dataset2_TDSD/
              ├── Dataset3_Schmugge/
              .
              .
-             └── Dataset8_Abdomen//
+             └── Dataset8_Abdomen/
 ```
 
 ## Dependencies
@@ -90,7 +90,7 @@ If you have used the abdominal dataset, or any of our trained models, kindly cit
 @inproceedings{topiwala2019bibe,
     author = {A. Topiwala and L. Al-Zogbi and T. Fleiter and A. Krieger},
      title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
-booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
+ booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
      pages = {1--8},
       year = {2019}
 }
