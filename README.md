@@ -54,25 +54,20 @@ $ tar -xzvf  Abdomen_Only_Dataset.tar.gz
 The folders are organized as follows:
 ```
 /All_Skin_Datasets/
-                  ├── Dataset1_HGR/
-                  │   ├── labels/
-                  │   │     ├ 000000.label
-                  │   │     └ 000001.label
-                  |   ├── voxels/
-                  |   |     ├ 000000.bin
-                  |   |     ├ 000000.label
-                  |   |     ├ 000000.occluded
-                  |   |     ├ 000000.invalid
-                  |   |     ├ 000001.bin
-                  |   |     ├ 000001.label
-                  |   |     ├ 000001.occluded
-                  |   |     ├ 000001.invalid
-                  ├── Dataset2_TDSD/
-                  ├── Dataset3_Schmugge/
-                  .
-                  .
-                  .
-                  └── Dataset8_Abdomen//
+             ├── Dataset1_HGR/
+             │   ├── original_images/
+             │   │     ├ <name>.jpg
+             │   │ .
+             │   │     └ <name>.jpg
+            |   ├── skin_masks/
+            |   |     ├ <name>.png
+            |   | .
+            |   |     ├ <name>.png
+             ├── Dataset2_TDSD/
+             ├── Dataset3_Schmugge/
+             .
+             .
+             └── Dataset8_Abdomen//
 ```
 
 ## Dependencies
