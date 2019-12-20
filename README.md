@@ -59,10 +59,10 @@ The folders are organized as follows:
              │   │     ├ <uniqueName>.jpg
              │   │     .
              │   │     └ <uniqueName>.jpg
-             |   ├── skin_masks/
+             |   └── skin_masks/
              |         ├ <uniqueName>.png
              |         .
-             |         ├ <uniqueName>.png
+             |         └ <uniqueName>.png
              ├── Dataset2_TDSD/
              ├── Dataset3_Schmugge/
              .
