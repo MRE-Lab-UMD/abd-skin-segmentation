@@ -39,7 +39,7 @@ The dataset consists of 1,400 abdomen images retrieved online from Google images
 
 ---
 
-## Downloading Abdominal Skin Dataset
+## Downloading Skin Datasets
 The complete skin datasets containing the original images along with their masks (which include HGR, TDSD, Schmugge, Pratheepan, VDM, SFA, FSD and our abdominal dataset) can be download from the following [link](https://drive.google.com/open?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE). These datasets have been sorted to follow the same format, and can be readily run in the codes. If you're only interested in the abdominal dataset, you can download it from [here](https://drive.google.com/open?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm). You can also download and unzip the datasets from the terminal:
 ```
 $ pip install gdown
@@ -56,13 +56,13 @@ The folders are organized as follows:
 /All_Skin_Datasets/
              ├── Dataset1_HGR/
              │   ├── original_images/
-             │   │     ├ <uniqueName>.jpg
+             │   │     ├ <uniqueName1>.jpg
              │   │     .
-             │   │     └ <uniqueName>.jpg
+             │   │     └ <uniqueNameK>.jpg
              |   └── skin_masks/
-             |         ├ <uniqueName>.png
+             |         ├ <uniqueName1>.png
              |         .
-             |         └ <uniqueName>.png
+             |         └ <uniqueNameK>.png
              ├── Dataset2_TDSD/
              ├── Dataset3_Schmugge/
              .
@@ -71,6 +71,16 @@ The folders are organized as follows:
 ```
 
 ## Dependencies
+The following codes require Python 3 to run. For installation, run:
+```
+$ sudo apt-get update
+$ sudo apt-get install python3.6
+```
+The codes are written on in Jupyter notebook, so if you wish to run them, you should have jupyter notebook installed, and clone the repository:
+```
+$ pip install jupyterlab
+$ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
+```
 Jupyter notebook, python 2(?), tenser flow, keras, opencv.
 
 ## Running the Codes
@@ -88,11 +98,11 @@ Clean up the MATLAB codes.
 If you have used the abdominal dataset, or any of our trained models, kindly cite the associated paper:
 ```
 @inproceedings{topiwala2019bibe,
-    author = {A. Topiwala and L. Al-Zogbi and T. Fleiter and A. Krieger},
-     title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
- booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
-     pages = {1--8},
-      year = {2019}
+     author = {A. Topiwala and L. Al-Zogbi and T. Fleiter and A. Krieger},
+      title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
+  booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
+      pages = {1--8},
+       year = {2019}
 }
 ``` 
 
