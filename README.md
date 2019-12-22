@@ -81,6 +81,7 @@ The codes are written on in Jupyter notebook, so if you wish to run them, you sh
 $ pip install jupyterlab
 $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
 ```
+The U-Net and features algoritm require open cv to be installed too.
 Jupyter notebook, python 2(?), tenser flow, keras, opencv.
 
 ## Running the Codes
