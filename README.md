@@ -44,12 +44,12 @@ The complete skin datasets containing the original images along with their masks
 ```
 $ pip install gdown
 $ gdown "https://drive.google.com/uc?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE"
-$ tar -xzvf  All_Skin_Datasets.tar.gz 
+$ tar -xzvf All_Skin_Datasets.tar.gz 
 ```
 If you want to download the abdominal dataset separately:
 ```
 $ gdown "https://drive.google.com/uc?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm"
-$ tar -xzvf  Abdomen_Only_Dataset.tar.gz 
+$ tar -xzvf Abdomen_Only_Dataset.tar.gz 
 ```
 The folders are organized as follows:
 ```
@@ -76,7 +76,7 @@ The codes require Python 3 to run. For installation run:
 $ sudo apt-get update
 $ sudo apt-get install python3.6
 ```
-The codes are written in Jupyter Notebook, so if you wish to run them, you should have Jupyter Notebook installed:
+U-Net and the Fully Connected Network are written in Jupyter Notebook, so if you wish to run them, you should have it installed:
 ```
 $ pip install jupyterlab
 ```
@@ -85,13 +85,14 @@ Next you need to install Tensorflow and Keras. The following steps include the i
 $ pip install --upgrade tensorflow
 $ pip install numpy scipy
 $ pip install scikit-learn
-$ pip install pillow
+$ pip install Pillow
 $ pip install h5py
 $ pip install keras
 ```
 Some other dependencies for running the codes which are not included in the Python library:
 ```
 $ pip install six matplotlib scikit-image opencv-python imageio Shapely
+$ pip install imgaug
 $ pip install talos
 $ pip install tqdm
 $ pip install Cython
