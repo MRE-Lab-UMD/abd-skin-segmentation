@@ -71,18 +71,36 @@ The folders are organized as follows:
 ```
 
 ## Dependencies
-The following codes require Python 3 to run. For installation, run:
+The codes require Python 3 to run. For installation run:
 ```
 $ sudo apt-get update
 $ sudo apt-get install python3.6
 ```
-The codes are written on in Jupyter notebook, so if you wish to run them, you should have jupyter notebook installed, and clone the repository:
+The codes are written in Jupyter Notebook, so if you wish to run them, you should have Jupyter Notebook installed:
 ```
 $ pip install jupyterlab
+```
+Next you need to install Tensorflow and Keras. The following steps include the installation of needed dependencies for this step:
+```
+$ pip install --upgrade tensorflow
+$ pip install numpy scipy
+$ pip install scikit-learn
+$ pip install pillow
+$ pip install h5py
+$ pip install keras
+```
+Some other dependencies for running the codes which are not included in the Python library:
+```
+$ pip install six matplotlib scikit-image opencv-python imageio Shapely
+$ pip install talos
+$ pip install tqdm
+$ pip install Cython
+$ pip install more-itertools
+```
+Finally clone the repository:
+```
 $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
 ```
-The U-Net and features algoritm require open cv to be installed too.
-Jupyter notebook, python 2(?), tenser flow, keras, opencv.
 
 ## Running the Codes
 ### Mask-RCNN
