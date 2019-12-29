@@ -133,7 +133,12 @@ Again summarize the code.
 Clean up the MATLAB codes.
 
 ### Real-Time Skin Segmentation
-
+To run the real-time segmentation using our trained U-Net model, go to the ```Real Time Skin Segmentation``` directory in your terminal, and just type in:
+```
+$ python UNET-live.py
+```
+Make sure that you have set up your path to the trained model correctly in the code, and installed all required dependencies. Press on the ESC key to stop the code and close the camera window.
+ 
 ## Citation
 If you have used the abdominal dataset, or any of our trained models, kindly cite the associated paper:
 ```
