@@ -128,7 +128,8 @@ $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
 The U-Net notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. The notebook U-Net - Parameter Optimization contains the same code as U-Net, but trains the network over a set of hyperparameters to find the optimal ones. 
 
 ### Fully Connected Network
-Again summarize the code.
+The Features notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. We recommend you read the entire instructions once before running any sections, as some of them will take a while to complete, so you want to make sure you're running the parts that are needed for you.
+
 ### Thresholding
 Clean up the MATLAB codes.
 
@@ -149,16 +150,10 @@ If you have used the abdominal dataset, or any of our trained models, kindly cit
       pages = {1--8},
        year = {2019}
 }
-``` 
-
-<!-- ## To Download the Datasets Used
-```
-pip install gdown
-gdown  https://drive.google.com/uc?id=1CS_tl8cXOmy3Zv9TrqD2gApUTftKCu4m
-```
-To Unzip
-```
-tar -xzvf  Skin_Datasets.tar.gz 
 ```
 
- Feel Better :* -->
+### Further Help and Suggestions
+We can't guarantee that the codes will run perfectly on your machine (they should, but you never know). If you have any problems, questions, or suggestions, please feel free to contact the authors by email, we are pretty responsive and friendly. 
+* Anirudh Topiwala: topiwala.anirudh@gmail.com
+* Lydia Zoghbi: lalzogbi@terpmail.umd.edu
+We hope to bring the best to the community! Cheers `:heart:``:beers:`!
