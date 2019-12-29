@@ -98,7 +98,7 @@ U-Net and the Fully Connected Network are written in Jupyter Notebook, so if you
 ```
 $ pip install jupyterlab
 ```
-Next you need to install Tensorflow and Keras. The following steps include the installation of needed dependencies for this step:
+Next you need to install Tensorflow and Keras (it's better to install tenserflow gpu, otherwise it will take days to train your networks). The following steps include the installation of needed dependencies for this step:
 ```
 $ pip install --upgrade tensorflow
 $ pip install numpy scipy
@@ -123,14 +123,16 @@ $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
 
 ## Running the Codes
 ### Mask-RCNN
+
 ### U-Net
-Summarize the comments in the code.
+The U-Net notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. The notebook U-Net - Parameter Optimization contains the same code as U-Net, but trains the network over a set of parameters to find the optimal ones. 
+
 ### Fully Connected Network
 Again summarize the code.
 ### Thresholding
 Clean up the MATLAB codes.
 
-## Running the Models
+### Real-Time Skin Segmentation
 
 ## Citation
 If you have used the abdominal dataset, or any of our trained models, kindly cite the associated paper:
