@@ -84,7 +84,7 @@ The folders are organized as follows:
                        |     └ <uniqueNameK>.jpg
                        └── skin_masks/
                              ├ <uniqueName1>.png
-                                  .
+                               .
                              └ <uniqueNameK>.png
 ```
 
