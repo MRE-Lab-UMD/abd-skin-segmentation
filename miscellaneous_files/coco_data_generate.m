@@ -1,4 +1,4 @@
-% %% Script to Rename
+% %% Script to Rename according to Coco format
 % clc;clear all;close all
 % 
 %% Input Directory
@@ -40,7 +40,7 @@
 
 %% Output
 % out = '../Input/Skin_Datasets/Coco_format/';
-%% Uncommet as needed
+%% Uncomment as needed
 
 %% Test
 test = '../Input/Skin_Datasets/Test/';

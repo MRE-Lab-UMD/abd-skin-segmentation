@@ -8,6 +8,7 @@ input_mask = imageDatastore(input_mask1,'IncludeSubfolders',true,'LabelSource','
 skin_augmented ='./Input/allabdomen/train/skin_augmented/';
 annotations_augmented = './Input/allabdomen/train/annotations_augmented/';
 augmentation1 = './Input/allabdomen/train/augmentation1/';
+
 %% Augmentation Starts Here
 k=756; % Naming Count for Augmented Images
 goback=0;
