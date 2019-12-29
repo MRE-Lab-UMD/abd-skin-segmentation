@@ -77,15 +77,15 @@ The folders are organized as follows:
                  │           ├ <uniqueName1>.png
                  │           .
                  │           └ <uniqueNameK>.png
-                 ├── train/            
-                   ├── original_images/
-                               |     ├ <uniqueName1>.jpg
-                               |     .
-                               |     └ <uniqueNameK>.jpg
-                         └── skin_masks/
-                               ├ <uniqueName1>.png
-                                       .
-                               └ <uniqueNameK>.png
+                 └── train/            
+                            ├── original_images/
+                          |     ├ <uniqueName1>.jpg
+                          |     .
+                          |     └ <uniqueNameK>.jpg
+                    └── skin_masks/
+                          ├ <uniqueName1>.png
+                                  .
+                          └ <uniqueNameK>.png
 ```
 
 ## Dependencies
