@@ -156,4 +156,4 @@ If you have used the abdominal dataset, or any of our trained models, kindly cit
 We can't guarantee that the codes will run perfectly on your machine (they should, but you never know). If you have any problems, questions, or suggestions, please feel free to contact the authors by email, we are pretty responsive and friendly. 
 * Anirudh Topiwala: topiwala.anirudh@gmail.com
 * Lydia Zoghbi: lalzogbi@terpmail.umd.edu
-We hope to bring the best to the community! Cheers `:heart:` `:beers:`!
+We hope to bring the best to the community! Cheers :heart: :beers:!
