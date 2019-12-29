@@ -9,7 +9,7 @@
 6) Hot to run models.-->
 
 ## Introduction
-This repository provides codes for the skin segmentation methods investigated in \[1\], mainly Mask-RCNN, U-Net, a Fully Connected Network and a MATLAB script for thresholding. The algorithms were primarily developed to perform abdominal skin segmentation for trauma patients using RGB images, as part of an ongoing research work for developing an autonomous robot for trauma assessment \[[2](https://epubs.siam.org/doi/abs/10.1137/1.9781611975758.2)\]\[3\].
+This repository provides codes for the skin segmentation methods investigated in \[[1](https://ieeexplore.ieee.org/document/8941944)\], mainly Mask-RCNN, U-Net, a Fully Connected Network and a MATLAB script for thresholding. The algorithms were primarily developed to perform abdominal skin segmentation for trauma patients using RGB images, as part of an ongoing research work for developing an autonomous robot for trauma assessment \[[2](https://epubs.siam.org/doi/abs/10.1137/1.9781611975758.2)\]\[[3](https://ieeexplore.ieee.org/document/8941790)\].
 
 ---
 
@@ -123,7 +123,7 @@ $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
 
 ## Running the Codes
 ### Mask-RCNN
-The directory ```Mask_RCNN``` contains a README file which provides ample explanations and examples to guide you through the codes. It provides steps for running different parts of the code, and examples on how to extend the algorithm to other applications.
+The directory ```Mask_RCNN``` contains a README file which provides ample explanations and examples to guide you through the codes. It provides steps for running different parts of the code, and examples on how to extend the algorithm to other applications. For training or running this network, you need to make sure the images are named according to the coco format. To help you with that, we provided a MATLAB script in the directory ```miscellaneous_files``` named ```coco_data_generate.m```. If you want to augment your data, you can use the ```augment.m``` script in the same directory.
 
 ### U-Net
 The U-Net notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. The notebook U-Net - Parameter Optimization contains the same code as U-Net, but trains the network over a set of hyperparameters to find the optimal ones. 
@@ -132,10 +132,10 @@ The U-Net notebook in the folder ```UNET and Features``` provides clear instruct
 The Features notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. We recommend you read the entire instructions once before running any sections, as some of them will take a while to complete, so you want to make sure you're running the parts that are needed for you.
 
 ### Thresholding
-Clean up the MATLAB codes.
+The MATLAB script for the thresholding is in the ```Thresholding``` directory. It is a function, so you can write your own script which calls it the way you need it. It takes as input an RGB image, and returns a thresholded (black and white) image.
 
 ### Real-Time Skin Segmentation
-To run the real-time segmentation using our trained U-Net model, go to the ```Real Time Skin Segmentation``` directory in your terminal, and just type in:
+To run the real-time segmentation using a trained U-Net model, go to the ```Real Time Skin Segmentation``` directory in your terminal, and just type in:
 ```
 $ python UNET-live.py
 ```
@@ -148,7 +148,7 @@ If you have used the abdominal dataset, or any of our trained models, kindly cit
      author = {A. Topiwala and L. Al-Zogbi and T. Fleiter and A. Krieger},
       title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
   booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
-      pages = {1--8},
+      pages = {752--759},
        year = {2019}
 }
 ```
