@@ -125,7 +125,7 @@ $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
 ### Mask-RCNN
 
 ### U-Net
-The U-Net notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. The notebook U-Net - Parameter Optimization contains the same code as U-Net, but trains the network over a set of parameters to find the optimal ones. 
+The U-Net notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. The notebook U-Net - Parameter Optimization contains the same code as U-Net, but trains the network over a set of hyperparameters to find the optimal ones. 
 
 ### Fully Connected Network
 Again summarize the code.
