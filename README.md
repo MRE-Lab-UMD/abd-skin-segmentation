@@ -69,14 +69,14 @@ The folders are organized as follows:
              .
              └── Dataset8_Abdomen/
                  ├── test/            
-                 |      ├── original_images/
-                 │            ├ <uniqueName1>.jpg
-                 │            .
-                 │            └ <uniqueNameK>.jpg
-                 │      └── skin_masks/
-                 │             ├ <uniqueName1>.png
-                 │             .
-                 │             └ <uniqueNameK>.png
+                 |     ├── original_images/
+                 │           ├ <uniqueName1>.jpg
+                 │           .
+                 │           └ <uniqueNameK>.jpg
+                 │     └── skin_masks/
+                 │           ├ <uniqueName1>.png
+                 │           .
+                 │           └ <uniqueNameK>.png
 ```
 
 ## Dependencies
