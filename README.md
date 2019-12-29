@@ -123,6 +123,7 @@ $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
 
 ## Running the Codes
 ### Mask-RCNN
+The directory ```Mask_RCNN``` contains a README file which provides ample explanations and examples to guide you through the codes. It provides with the steps for running different parts of the code, and examples on how to extend the algorithm to other applications.
 
 ### U-Net
 The U-Net notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. The notebook U-Net - Parameter Optimization contains the same code as U-Net, but trains the network over a set of hyperparameters to find the optimal ones. 
