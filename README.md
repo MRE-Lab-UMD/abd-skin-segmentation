@@ -159,12 +159,13 @@ $ gdown "https://drive.google.com/uc?id=1ovteKdgCMAuu-N1-C9pyQyvj_al9s_k3"
 ## Citation
 If you have used the abdominal dataset, or any of our trained models, kindly cite the associated paper:
 ```
-@inproceedings{topiwala2019bibe,
-     author = {A. Topiwala and L. Al-Zogbi and T. Fleiter and A. Krieger},
-      title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
-  booktitle = {BIBE 2019; International Conference on Biological Information and Biomedical Engineering},
-      pages = {752--759},
-       year = {2019}
+@inproceedings {topiwala2019adaptation,
+      author = {Topiwala, Anirudh and Al-Zogbi, Lidia and Fleiter, Thorsten and Krieger, Axel},
+       title = {{Adaptation and Evaluation of Deep Leaning Techniques for Skin Segmentation on Novel Abdominal Dataset}},
+   booktitle = {2019 IEEE 19th International Conference on Bioinformatics and Bioengineering (BIBE)},
+       pages = {752--759},
+        year = {2019},
+organization = {IEEE}
 }
 ```
 
