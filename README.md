@@ -141,6 +141,15 @@ $ python UNET-live.py
 ```
 Make sure that you have set up your path to the trained model correctly in the code, and installed all required dependencies. Press on the ESC key to stop the code and close the camera window.
 
+---
+
+#### Video of Anirudh demonstrating the real-time skin segmentation using U-Net. The algorithm works with multiple people in the same view, too.
+<p align="center">
+  <img width="500" src="https://github.com/MRE-Lab-UMD/abd-skin-segmentation/miscellaneous_files/real-time-segmentation.gif">
+</p>
+
+---
+
 ## Models
 We are providing you with our trained models in the ```Models``` directory. The folder contains the U-Net and Features models. The thresholding model lies within the threshold values we defined in the aforementioned MATLAB script. The Mask-RCNN model is too large to be uploaded to this repository, so you can download it from your terminal:
 ```
