@@ -145,7 +145,7 @@ Make sure that you have set up your path to the trained model correctly in the c
 
 #### Video of Anirudh demonstrating the real-time skin segmentation using U-Net. The algorithm works with multiple people in the same view, too.
 <p align="center">
-  <img width="500" src="https://github.com/MRE-Lab-UMD/abd-skin-segmentation/miscellaneous_files/real-time-segmentation.gif">
+  <img width="600" src="https://github.com/MRE-Lab-UMD/abd-skin-segmentation/blob/master/miscellaneous_files/real_time_segmentation.gif">
 </p>
 
 ---
