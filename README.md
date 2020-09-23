@@ -1,5 +1,6 @@
 # Deep Learning Techniques for Skin Segmentation on Novel Abdominal Dataset
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![HitCount](http://hits.dwyl.com/MRE-Lab-UMD/abd-skin-segmentation.svg)](http://hits.dwyl.com/MRE-Lab-UMD/abd-skin-segmentation)
 ---
 <!--1) Add License file ( Change the abve tag depending upon the license we select)
 2) Info about paper, add a gif
