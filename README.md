@@ -5,8 +5,8 @@
 ---
 <!--1) Add License file ( Change the abve tag depending upon the license we select)
 2) Info about paper, add a gif
-3) Citation links 
-4) Info about the dataset 
+3) Citation links
+4) Info about the dataset
 5) How to download dataset
 6) Hot to run models.-->
 
@@ -23,7 +23,7 @@ This repository provides codes for the skin segmentation methods investigated in
 ---
 
 ## Information on Abdominal Skin Dataset
-The dataset consists of 1,400 abdomen images retrieved online from Google images search, which were subsequently manually segmented. The images were selected to preserve the diversity of different ethnic groups, preventing indirect racial biases in segmentation algorithms; 700 images represent darker skinned people, which include African, Indian and Hispanic groups, and 700 images represent lighter skinned people, such as Caucasian and Asian groups. A total of 400 images were selected to represent people with higher body mass indices, split equally between light and dark categories. Variations between individuals, such as hair and tattoo coverage, in addition to externals variations like shadows, were also accounted for in the dataset preparation. The size of the images is 227x227 pixels. The skin pixels form 66% of the entire pixel data, with a mean of 54.42% per individual image, and a corresponding standard deviation of 15%. 
+The dataset consists of 1,400 abdomen images retrieved online from Google images search, which were subsequently manually segmented. The images were selected to preserve the diversity of different ethnic groups, preventing indirect racial biases in segmentation algorithms; 700 images represent darker skinned people, which include African, Indian and Hispanic groups, and 700 images represent lighter skinned people, such as Caucasian and Asian groups. A total of 400 images were selected to represent people with higher body mass indices, split equally between light and dark categories. Variations between individuals, such as hair and tattoo coverage, in addition to externals variations like shadows, were also accounted for in the dataset preparation. The size of the images is 227x227 pixels. The skin pixels form 66% of the entire pixel data, with a mean of 54.42% per individual image, and a corresponding standard deviation of 15%.
 
 ---
 
@@ -46,12 +46,12 @@ The complete skin datasets containing the original images along with their masks
 ```
 $ pip install gdown
 $ gdown "https://drive.google.com/uc?id=1xzYn4Rat4z2LA5zQW7JTfvA1bosz7oM-"
-$ tar -xzvf All_Skin_Datasets.tar.gz 
+$ tar -xzvf All_Skin_Datasets.tar.gz
 ```
 If you want to download the abdominal dataset separately:
 ```
 $ gdown "https://drive.google.com/uc?id=1MnBW_OJqrTmzwc23YI5NK_y_l4zk9JGJ"
-$ tar -xzvf Abdomen_Only_Dataset.tar.gz 
+$ tar -xzvf Abdomen_Only_Dataset.tar.gz
 ```
 The folders are organized as follows:
 ```
@@ -70,7 +70,7 @@ The folders are organized as follows:
              .
              .
              └── Dataset8_Abdomen/
-                 ├── test/            
+                 ├── test/
                  |     ├── original_images/
                  │     |     ├ <uniqueName1>.jpg
                  │     |     .
@@ -79,7 +79,7 @@ The folders are organized as follows:
                  │           ├ <uniqueName1>.png
                  │           .
                  │           └ <uniqueNameK>.png
-                 └── train/            
+                 └── train/
                        ├── original_images/
                        |     ├ <uniqueName1>.jpg
                        |     .
@@ -98,29 +98,45 @@ $ sudo apt-get install python3.6
 ```
 U-Net and the Fully Connected Network are written in Jupyter Notebook, so if you wish to run them, you should have it installed:
 ```
-$ pip install jupyterlab
+$ pip3 install jupyterlab
 ```
-Next you need to install Tensorflow and Keras (it's better to install tenserflow gpu, otherwise it will take days to train your networks). The following steps include the installation of needed dependencies for this step:
+Next you need to install Tensorflow and Keras (it's better to install tenserflow gpu, otherwise it will take days to train your networks).
+
+Setting up the virtual environment. Skip this step if you already have a virtual environment.
 ```
-$ pip install --upgrade tensorflow
-$ pip install numpy scipy
-$ pip install scikit-learn
-$ pip install Pillow
-$ pip install h5py
-$ pip install keras
+$ sudo apt update
+$ sudo apt install python3-dev python3-pip python3-venv
+$ python3 -m venv --system-site-packages ./venv
+$ source ./venv/bin/activate
+$ pip3 install --upgrade pip
 ```
-Some other dependencies for running the codes which are not included in the Python library:
+
+The following are the minium dependencies required to run real time skin segmentation with the UNET model.
+
+Make sure you have activated the environment by running `source ./venv/bin/activate`
+
 ```
-$ pip install six matplotlib scikit-image opencv-python imageio Shapely
-$ pip install imgaug
-$ pip install talos
-$ pip install tqdm
-$ pip install Cython
-$ pip install more-itertools
+$ pip3 install --upgrade tensorflow
+$ pip3 install matolotlib
+$ pip3 install tqdm
+$ pip3 install scikit-image
+$ pip3 install keras
+$ pip3 install opencv-python
 ```
+Make sure to install the dependencies in the order given above.
+
 Finally clone the repository:
 ```
 $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
+```
+
+Optional: Some other dependencies which might be needed to run the other files of the repository include:
+```
+$ pip3 install Shapely
+$ pip3 install imgaug
+$ pip3 install Cython
+$ pip3 install more-itertools
+$ pip3 install talos
 ```
 
 ## Running the Codes
@@ -128,7 +144,7 @@ $ git clone --recursive https://github.com/MRE-Lab-UMD/abd-skin-segmentation.git
 The directory ```Mask_RCNN``` contains a README file which provides ample explanations and examples to guide you through the codes. It provides steps for running different parts of the code, and examples on how to extend the algorithm to other applications. For training or running this network, you need to make sure the images are named according to the coco format. To help you with that, we provided a MATLAB script in the directory ```miscellaneous_files``` named ```coco_data_generate.m```. If you want to augment your data, you can use the ```augment.m``` script in the same directory.
 
 ### U-Net
-The U-Net notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. The notebook U-Net - Parameter Optimization contains the same code as U-Net, but trains the network over a set of hyperparameters to find the optimal ones. 
+The U-Net notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. The notebook U-Net - Parameter Optimization contains the same code as U-Net, but trains the network over a set of hyperparameters to find the optimal ones.
 
 ### Fully Connected Network
 The Features notebook in the folder ```UNET and Features``` provides clear instructions and comments on each section and subsection. Just follow the guidelines to train your own network, and make sure you replace our paths with yours. The code will automatically save your model as .h5, which you can subsequently load for further usage. We recommend you read the entire instructions once before running any sections, as some of them will take a while to complete, so you want to make sure you're running the parts that are needed for you.
@@ -172,7 +188,7 @@ organization = {IEEE}
 ```
 
 ## Further Help and Suggestions
-We can't guarantee that the codes will run perfectly on your machine (they should, but you never know). If you have any problems, questions, or suggestions, please feel free to contact the authors by email, we are pretty responsive and friendly. 
+We can't guarantee that the codes will run perfectly on your machine (they should, but you never know). If you have any problems, questions, or suggestions, please feel free to contact the authors by email, we are pretty responsive and friendly.
 * Anirudh Topiwala: topiwala.anirudh@gmail.com
 * Lydia Zoghbi: lalzogb1@jh.edu
 
