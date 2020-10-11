@@ -45,7 +45,7 @@ def mean_iou(y_true, y_pred):
 
 # Load the trained model, you can use yours or the model we provide in our code
 # Make sure to set up the path correctly
-model = load_model('../models/UNET.h5', custom_objects={'mean_iou': mean_iou})
+model = load_model('../Models/UNET.h5', custom_objects={'mean_iou': mean_iou})
 
 # Open window to visualize the segmentation
 cv2.namedWindow("preview")
@@ -53,7 +53,7 @@ cv2.namedWindow("normal")
 vc = cv2.VideoCapture(0)
 
 # Try to get first frame
-if vc.isOpened(): 
+if vc.isOpened():
     rval, frame = vc.read()
 else:
     rval = False
@@ -62,10 +62,10 @@ else:
 while rval:
     rval, frame = vc.read()
     ima1 = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
-    img = resize(ima1, (IMG_HEIGHT, IMG_WIDTH), mode='constant', 
+    img = resize(ima1, (IMG_HEIGHT, IMG_WIDTH), mode='constant',
                                       preserve_range=True)
     newframe= np.expand_dims(img, axis=0)
-    preds = model.predict(newframe, verbose=0)    
+    preds = model.predict(newframe, verbose=0)
     preds_img = (preds > 0.5).astype(np.uint8)
     cv2.imshow("preview", np.squeeze(preds_img*255, axis=0))
     cv2.imshow("normal",frame)
