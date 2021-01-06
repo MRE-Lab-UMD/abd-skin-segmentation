@@ -45,12 +45,12 @@ The dataset consists of 1,400 abdomen images retrieved online from Google images
 The complete skin datasets containing the original images along with their masks (which include HGR, TDSD, Schmugge, Pratheepan, VDM, SFA, FSD and our abdominal dataset) can be download from the following [link](https://drive.google.com/open?id=15FEX2rHemvQdAtuidh2qf2anOpHHFpzE). These datasets have been sorted to follow the same format, and can be readily run in the codes. If you're only interested in the abdominal dataset, you can download it from [here](https://drive.google.com/open?id=1j6owfRdf1UnH2wVqZuCbO9fY5-qaAiQm). You can also download and unzip the datasets from the terminal:
 ```
 $ pip install gdown
-$ gdown "https://drive.google.com/uc?id=1xzYn4Rat4z2LA5zQW7JTfvA1bosz7oM-"
+$ gdown "https://drive.google.com/uc?id=13jVtt8sKinzteI1VgkSzzIHndbjLgGH9"
 $ tar -xzvf All_Skin_Datasets.tar.gz
 ```
 If you want to download the abdominal dataset separately:
 ```
-$ gdown "https://drive.google.com/uc?id=1MnBW_OJqrTmzwc23YI5NK_y_l4zk9JGJ"
+$ gdown "https://drive.google.com/uc?id=1H2T4LuMSHZ7Fzzt1MPiBhvC1Zdg0bZPN"
 $ tar -xzvf Abdomen_Only_Dataset.tar.gz
 ```
 The folders are organized as follows:
@@ -117,7 +117,7 @@ Make sure you have activated the environment by running `source ./venv/bin/activ
 
 ```
 $ pip3 install --upgrade tensorflow
-$ pip3 install matolotlib
+$ pip3 install matplotlib
 $ pip3 install tqdm
 $ pip3 install scikit-image
 $ pip3 install keras
