@@ -23,7 +23,7 @@ print("Using device: ", device)
 
 # Load the trained model, you can use yours or the model we provide in our code
 # Make sure to set up the path correctly
-PATH = './Models/unet_pytorch.pth'
+PATH = './Models/final_unet_pytorch.pth'
 model = UNet(input_channels=3)
 model.load_state_dict(torch.load(PATH, map_location=device))
 model.eval()
@@ -54,6 +54,8 @@ while rval:
     preds = model(input_tensor)
     prediction = preds[0].cpu().detach().numpy()
     prediction = np.transpose(prediction, (1, 2, 0))
+    # To see a binary mask, uncomment the below line.
+    # prediction = np.uint8((prediction > 0.7) * 255)
     cv2.imshow("preview", prediction)
     cv2.imshow("normal", frame)
     key = cv2.waitKey(20)
